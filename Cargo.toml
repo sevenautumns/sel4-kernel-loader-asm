@@ -1,0 +1,21 @@
+#
+# Copyright 2023, Colias Group, LLC
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+
+[package]
+name = "sel4-kernel-loader-asm"
+version = "0.1.0"
+authors = ["Nick Spinale <nick.spinale@coliasgroup.com>"]
+edition = "2024"
+license = "BSD-2-Clause AND GPL-2.0-only"
+
+[dependencies]
+
+[build-dependencies]
+cc = "1.2.43"
+glob = "0.3.3"
+sel4-build-env = { git= "https://github.com/seL4/rust-sel4", rev = "95feffab18a1b46b9feb78aa599dd2f23c8eb364" }
+sel4-config = { git= "https://github.com/seL4/rust-sel4", rev = "95feffab18a1b46b9feb78aa599dd2f23c8eb364" }
+
